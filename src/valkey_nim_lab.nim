@@ -5,7 +5,7 @@
 import redis, asyncdispatch
 import os, strutils
 
-proc connectToValkey*(credsPath: string = getHomeDir() / "valkey.creds"): {.async.} =
+proc connectToValkey*(credsPath: string = getHomeDir() / "valkey.creds") {.async.} =
   let pass = readFile(credsPath).strip()
   let client = await openAsync()
   await client.auth(pass)
