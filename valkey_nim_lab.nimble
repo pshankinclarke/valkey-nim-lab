@@ -5,7 +5,7 @@ author        = "Parker Shankin-Clarke"
 description   = "A small project to test Nim + Valkey using the Redis client"
 license       = "MIT"
 
-srcDir       = "."
+srcDir       = "src"
 bin           = @["test"]
 
 # Dependencies
